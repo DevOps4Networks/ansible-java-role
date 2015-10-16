@@ -14,12 +14,17 @@ None.
 Role Variables
 --------------
 
-The `java_packages` variable must be set to a list of the desired Java packages. For example:
+There are two variable for the Debian and RedHat/Fedora based distributions. See 
+below for examples:
 
 ```yaml
-java_packages:
-  - openjdk-6-jdk
-  - oracle-java7-installer
+debian_java_packages:
+  - oracle-java8-installer
+```
+
+```yaml
+redhat_java_packages:
+  - java-1.8.0-openjdk-devel
 ```
 
 # Debian / Ubuntu
@@ -46,6 +51,7 @@ Valid packages for Fedora are:
 
 - java-1.7.0-openjdk
 - java-1.8.0-openjdk
+- java-1.8.0-openjdk-devel
 
 # Others
 
