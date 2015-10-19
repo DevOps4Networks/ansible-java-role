@@ -1,3 +1,4 @@
 ---
-java_packages: []
+debian_java_packages: []
+redhat_java_packages: []
 java_cleanup: True
