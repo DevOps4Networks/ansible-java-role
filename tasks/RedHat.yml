@@ -1,7 +1,7 @@
 ---
 
 - name: Install Java packages
-  dnf: name={{ item }} state=latest
+  yum: name={{ item }} state=latest
   with_items: redhat_java_packages
   when: ansible_os_family == 'RedHat'
 
